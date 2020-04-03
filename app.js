@@ -21,7 +21,6 @@ function addToListArray() {
     updateList(input, id, false);
     id++;
     this.input.value = "";
-    console.log(LIST);
 }
 
 function updateList(item, id, done) {
@@ -42,7 +41,5 @@ function removeFromList(id) {
     var element = document.getElementById(id);
     element.parentNode.removeChild(element);
     LIST.splice(id, 1);
-    console.log(LIST[id]);
-    console.log('remove');
 }
 
