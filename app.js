@@ -2,7 +2,6 @@ var list = document.getElementById('list');
 var input = document.getElementById('input-field');
 
 let LIST = [];
-let id = 0;
 
 input.addEventListener("keyup", function(event) {
     if(event.keyCode === 13) {
@@ -13,6 +12,7 @@ input.addEventListener("keyup", function(event) {
 })
 
 function addToListArray() {
+    let id = 0;
     var input = document.getElementById('input-field').value;
     LIST.push({
         name: input,
@@ -24,9 +24,6 @@ function addToListArray() {
 }
 
 function updateList(item, id, done) {
-    console.log(item);
-    console.log(id);
-    console.log(done);
     const text = `<li id="${id}" class="item">
                     <div>
                         <p style="display: inline-block" class = "text"> ${item} </p>
