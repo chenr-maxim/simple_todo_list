@@ -4,6 +4,8 @@ var input = document.getElementById('input-field');
 let LIST = [];
 let id = 0;
 
+console.log('testing');
+
 input.addEventListener("keyup", function(event) {
     if(event.keyCode === 13) {
         event.preventDefault();
